@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/lib/animate.css">
+    <!-- SCRIPTS -->
+    <title>JS Calculator</title>
+</head>
+
+<body>
+    <!-- WAVY BACKGROUND -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffd830" fill-opacity="1"
+            d="M0,192L60,181.3C120,171,240,149,360,165.3C480,181,600,235,720,213.3C840,192,960,96,1080,48C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        </path>
+    </svg>
+    <main id="main">
+        <!-- Title right section -->
+        <section id="left">
+            <!-- Circle in background of text -->
+            <div class="circle animated bounceInLeft">
+                <h1 id="title">JavaScript
+                    <span id="subtitle">CALCULATOR</span>
+                </h1>
+            </div>
+        </section>
+        <!-- Calculator left section -->
+        <section id="right">
+            <div class="wrapper_calculator">
+                <!-- UPPER PART DISPLAY NUMBERS -->
+                <div class="display_nums">
+                    <p id="display_current">
+                        
+                    </p>
+                </div>
+                <!-- LOWER PART BUTTONS WITH NUMBERS & OPERATIONS -->
+                <div class="display_btns">
+                    <div id="display_btns_nr">
+                        <button id="7" class="number">7</button>
+                        <button id="8" class="number">8</button>
+                        <button id="9" class="number">9</button>
+                        <button id="4" class="number">4</button>
+                        <button id="5" class="number">5</button>
+                        <button id="6" class="number">6</button>
+                        <button id="1" class="number">1</button>
+                        <button id="2" class="number">2</button>
+                        <button id="3" class="number">3</button>
+                        <button id="decimal" >.</button>
+                        <button id="0" class="number">0</button>
+                        <button id="equal">=</button>
+                    </div>
+                    <div id="display_btns_operations">
+                        <button id="clear">AC</button>
+                        <button id="divide" class="operator">/</button>
+                        <button id="multiply" class="operator">*</button>
+                        <button id="substract" class="operator">-</button>
+                        <button id="add" class="operator">+</button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    
+    <!-- SCRIPTS -->
+    <script src="./assets/js/lib/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

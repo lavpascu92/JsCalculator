@@ -1,0 +1,54 @@
+//*****
+//FONTS
+//*****
+@mixin font_karla_normal($font_size){
+    font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
+    font-size: $font_size;
+    font-weight: 400;    
+}
+
+@mixin font_karla_bold($font_size){
+    font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
+    font-size: $font_size;
+    font-weight: 700;    
+}
+
+@mixin font_poiretOne($font_size){
+    font-family: 'Poiret One', cursive;
+    font-size: $font_size;
+    font-weight: 400;    
+}
+
+//*************
+//MEDIA QUERIES
+//*************
+@mixin media_mobile_S{
+    @media (min-width: #{$mobile_S}){
+        @content;
+    }
+}
+@mixin media_mobile_M{
+    @media (min-width: #{$mobile_M}){
+        @content;
+    }
+}
+@mixin media_tablet {
+    @media (min-width: #{$tablet}){
+        @content;
+    }
+}
+@mixin media_laptop {
+    @media (min-width: #{$laptop}){
+        @content;
+    }
+}
+@mixin media_desktop_S {
+    @media (min-width: #{$desktop_S}){
+        @content;
+    }
+}
+@mixin media_desktop_M {
+    @media (min-width: #{$desktop_M}){
+        @content;
+    }
+}

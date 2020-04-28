@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700|Poiret+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body svg {
+  position: fixed;
+  bottom: 0px;
+  z-index: -1;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+section#left {
+  position: relative;
+  height: 25vh;
+}
+
+section#left div.circle {
+  position: absolute;
+  left: 85px;
+  top: 5px;
+  z-index: -1;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #ffd830;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+}
+
+@media (min-width: 600px) {
+  section#left div.circle {
+    top: 25px;
+    left: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  section#left div.circle {
+    top: 75px;
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 1100px) {
+  section#left div.circle {
+    top: 125px;
+    left: 200px;
+  }
+}
+
+section#left div.circle h1#title {
+  position: relative;
+  right: 17px;
+  top: 10px;
+  font-family: 'Poiret One', cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+  color: #FA8334;
+}
+
+@media (min-width: 768px) {
+  section#left div.circle h1#title {
+    font-size: 3.25rem;
+  }
+}
+
+section#left div.circle h1#title span#subtitle {
+  position: relative;
+  bottom: 35px;
+  left: 58px;
+  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #555;
+}
+
+@media (min-width: 768px) {
+  section#left div.circle h1#title span#subtitle {
+    font-size: 1rem;
+    left: 85px;
+    bottom: 45px;
+  }
+}
+
+section#right {
+  position: relative;
+}
+
+section#right div.wrapper_calculator {
+  width: 90%;
+  margin: 20px auto;
+  height: 80%;
+  border-radius: 10px;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 400px) {
+  section#right div.wrapper_calculator {
+    width: 80%;
+  }
+}
+
+@media (min-width: 500px) {
+  section#right div.wrapper_calculator {
+    width: 70%;
+  }
+}
+
+@media (min-width: 600px) {
+  section#right div.wrapper_calculator {
+    margin-top: 30%;
+    width: 85%;
+  }
+}
+
+@media (min-width: 768px) {
+  section#right div.wrapper_calculator {
+    width: 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  section#right div.wrapper_calculator {
+    width: 65%;
+    margin-top: 25%;
+  }
+}
+
+@media (min-width: 1100px) {
+  section#right div.wrapper_calculator {
+    width: 47%;
+  }
+}
+
+section#right div.wrapper_calculator div.display_nums {
+  min-height: 15vh;
+  background-color: #ffd830;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #222;
+}
+
+section#right div.wrapper_calculator div.display_nums p#display_current {
+  min-height: 30px;
+  padding: 8px;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+@media (min-width: 1100px) {
+  section#right div.wrapper_calculator div.display_nums p#display_current {
+    font-size: 2rem;
+  }
+}
+
+section#right div.wrapper_calculator div.display_btns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+}
+
+section#right div.wrapper_calculator div.display_btns div#display_btns_nr {
+  margin-top: 35px;
+  margin-left: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+section#right div.wrapper_calculator div.display_btns div#display_btns_nr button, section#right div.wrapper_calculator div.display_btns div#display_btns_nr button#equal {
+  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #555;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+@media (min-width: 400px) {
+  section#right div.wrapper_calculator div.display_btns div#display_btns_nr button, section#right div.wrapper_calculator div.display_btns div#display_btns_nr button#equal {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+section#right div.wrapper_calculator div.display_btns div#display_btns_nr button:hover, section#right div.wrapper_calculator div.display_btns div#display_btns_nr button#equal:hover {
+  color: #fff;
+  background-color: #ffd830;
+}
+
+section#right div.wrapper_calculator div.display_btns div#display_btns_nr button#equal {
+  background-color: #ffd830;
+  color: #fff;
+}
+
+section#right div.wrapper_calculator div.display_btns div#display_btns_nr button#equal:hover {
+  color: #ffd830;
+  background-color: #eee;
+}
+
+section#right div.wrapper_calculator div.display_btns div#display_btns_operations {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+section#right div.wrapper_calculator div.display_btns div#display_btns_operations button, section#right div.wrapper_calculator div.display_btns div#display_btns_operations div#display_btns_nr button#equal, section#right div.wrapper_calculator div.display_btns div#display_btns_nr div#display_btns_operations button#equal {
+  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #555;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+@media (min-width: 400px) {
+  section#right div.wrapper_calculator div.display_btns div#display_btns_operations button, section#right div.wrapper_calculator div.display_btns div#display_btns_operations div#display_btns_nr button#equal, section#right div.wrapper_calculator div.display_btns div#display_btns_nr div#display_btns_operations button#equal {
+    font-size: 1.5rem;
+  }
+}
+
+section#right div.wrapper_calculator div.display_btns div#display_btns_operations button:hover, section#right div.wrapper_calculator div.display_btns div#display_btns_operations div#display_btns_nr button#equal:hover, section#right div.wrapper_calculator div.display_btns div#display_btns_nr div#display_btns_operations button#equal:hover {
+  color: #fff;
+  background-color: #ffd830;
+}
+/*# sourceMappingURL=style.css.map */
